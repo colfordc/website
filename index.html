@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html>
+  <!-- Website designed by Kevin Tan www.ktizzel.com -->
+  <head>
+    <title>Katie Colford</title>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
+    <link href='https://fonts.googleapis.com/css?family=Crimson+Text:400|Open+Sans:400' rel='stylesheet' type='text/css'>
+
+    <link href="css/home.css"rel="stylesheet" media="screen">
+    <script>
+
+      $(document).ready(function(){
+          $('.slideshow-first').click(function(){
+              $(this).parent().parent().siblings('.project-description').slideToggle(500);
+
+             $(this).parent().children('.slideshow').toggle('slide', 500);
+
+              if( $(this).parent().parent().css('overflow') == 'hidden'){
+                $(this).parent().parent().css('overflow', 'scroll');
+                $('#dim').delay(500).fadeToggle();
+              }
+              else{
+                $(this).parent().parent().css('overflow', 'hidden');
+                 $('#dim').delay(500).fadeToggle();
+              }
+              
+          })
+          $('.project-title').click(function(){
+              $(this).siblings('.project-description').slideToggle(500);
+
+              $(this).siblings('.image-container-container').children('.image-container').children('.slideshow').toggle('slide', 500);
+
+              if( $(this).siblings('.image-container-container').css('overflow') == 'hidden'){
+                $(this).siblings('.image-container-container').css('overflow', 'scroll');
+                 $('#dim').delay(500).fadeToggle();
+              }
+              else{
+                $(this).siblings('.image-container-container').css('overflow', 'hidden');
+                 $('#dim').delay(500).fadeToggle();
+              }
+          })
+
+          var offset = ($(window).width() - 600)/2
+          $('.image-container').css('padding-left', offset)
+      })
+      $(window).resize(function(){
+          var offset = ($(window).width() - 600)/2
+         $('.image-container').css('padding-left', offset)
+      })
+    </script>
+  </head>
+
+  <body>
+
+    <a href="#"><h1 class="info" id="name">Katie Colford</h1></a>
+    <a href="views/about.html"> <h1 class="info" id="about">About</h1> </a>
+    <a href="views/contact.html"> <h1 class="info" id="contact">Contact</h1> </a>
+
+    <div id="dim"></div>
+
+    <section id="project-container">
+
+      <section class="project">
+          <section class="project">
+          <div class="image-container-container">
+            <div class="image-container" id="gatehouse-width">
+              <img class="slideshow-first" src="images/gatehouse_1.jpg">
+              <img class="slideshow" src="images/gatehouse_5.jpg">
+              <img class="slideshow" src="images/gatehouse_2.jpg">
+              <img class="slideshow" src="images/gatehouse_3.jpg">
+              <img class="slideshow" src="images/gatehouse_4.jpg">
+              <img class="slideshow" src="images/gatehouse_episodes.jpg">
+              <img class="slideshow" src="images/gatehouse_section_front.jpg">
+              <img class="slideshow" src="images/gatehouse_section_back.jpg">
+              <img class="slideshow" src="images/gatehouse_massingstudies.jpg">
+            </div>
+         </div>
+
+         <p class="project-title">The Gatehouse</p>
+          <br><br><br>
+          <p class="project-description">
+            Given a site on the Gowanus Canal in Brooklyn, this project focused on designing a gatehouse on the canal. The gatekeeper is the Ancient Mariner from Samuel Taylor Coleridge’s “The Rime of the Ancient Mariner"; the poem is split into six parts, and each becomes a sectional moment that recreates the psychological or emotional state of the episode through architecture.
+          </p>
+
+      <section class="project">
+          <div class="image-container-container">
+            <div class="image-container" id="bas-relief-width">
+              <img class="slideshow-first" src="images/bas-relief_front.jpg"> 
+              <img class="slideshow" src="images/bas-relief_left.jpg"> 
+              <img class="slideshow" src="images/bas-relief_right.jpg">
+            </div>
+         </div>
+
+
+          <p class="project-title">Bas Relief</p>
+          <br><br><br>
+          <p class="project-description">
+            Like a traditional carved bas relief, this piece is only three inches deep, but through the use of perspective and illusion implies an immense space beyond its narrow frame.
+          </p>
+      </section>
+
+      <section class="project">
+          <div class="image-container-container">
+            <div class="image-container" id="playbook-width">
+              <img class="slideshow-first" src="images/playbook_1.jpg"> 
+              <img class="slideshow" src="images/playbook_2.jpg"> 
+              <img class="slideshow" src="images/playbook_3.jpg"> 
+              <img class="slideshow" src="images/playbook_4.jpg"> 
+            </div>
+         </div>
+
+          <p class="project-title">The Playbook</p>
+          <br><br><br>
+          <p class="project-description">
+            The playbook is composed of every page in the Oxford English Dictionary that contains the word "performance." The pages are excised and linearly notated to trace the progression of "performance" throughout the text. The book itself is a performative object, while taking on the spatial and structural attributes of the media.
+          </p>
+      </section>
+
+
+      <section class="project">
+          <section class="project">
+          <div class="image-container-container">
+            <div class="image-container" id="performance-width">
+              <img class="slideshow-first" src="images/performance_1.jpg">
+              <img class="slideshow" src="images/performance_3.jpg"> 
+              <img class="slideshow" src="images/performance_4.jpg">
+              <img class="slideshow" src="images/performance_5.jpg"> 
+              <img class="slideshow" src="images/performance_6.jpg">
+              <img class="slideshow" src="images/performance_7.jpg"> 
+            </div>
+         </div>
+
+         <p class="project-title">Performance Space</p>
+          <br><br><br>
+          <p class="project-description">
+            A system of screens creates an immersive stage for performance, playing with perspective so as to lead the viewer through the entire performative act. These screens shift and recombine to form not just the two-dimensional "stage," but also circulation and seating. The building draws from the conditions of the site to bring even the passerby into the space of performance.
+          </p>
+      </section>
+
+<section class="project">
+          <section class="project">
+          <div class="image-container-container">
+            <div class="image-container" id="analytic-width">
+              <img class="slideshow-first" src="images/analytic_tectonic_1.jpg">
+              <img class="slideshow" src="images/analytic_tectonic_2.jpg">
+              <img class="slideshow" src="images/analytic_tectonic_3.jpg">
+              <img class="slideshow" src="images/analytic_contour_1.jpg">
+              <img class="slideshow" src="images/analytic_contour_2.jpg">
+              <img class="slideshow" src="images/analytic_massing_1.jpg">
+              <img class="slideshow" src="images/analytic_massing_2.jpg">
+              <img class="slideshow" src="images/analytic_program_1.jpg">
+              <img class="slideshow" src="images/analytic_program_2.jpg">              
+              <img class="slideshow" src="images/analytic_plans.jpg">
+              <img class="slideshow" src="images/analytic_sections.jpg">
+              <img class="slideshow" src="images/analytic_axon.jpg">
+            </div>
+         </div>
+
+         <p class="project-title">The Analytic Model, Villa Shodhan</p>
+          <br><br><br>
+          <p class="project-description">
+            A semester-long study of Le Corbusier’s Villa Shodhan (1951-56) as an analysis of the formal and conceptual armature of the building. The four models and drawings address the building's tectonics, contour, massing, and program.
+          </p>
+        </section>
+
+        <section class="project">
+          <section class="project">
+          <div class="image-container-container">
+            <div class="image-container" id="villa-width">
+              <img class="slideshow-first" src="images/villa_1.jpg">
+              <img class="slideshow" src="images/villa_2.jpg"> 
+              <img class="slideshow" src="images/villa_3.jpg">
+              <img class="slideshow" src="images/villa_4.jpg"> 
+              <img class="slideshow" src="images/villa_landscapestudy.jpg">
+              <img class="slideshow" src="images/villa_sketchmodel.jpg"> 
+            </div>
+         </div>
+
+         <p class="project-title">Villa in the Landscape</p>
+          <br><br><br>
+          <p class="project-description">
+            Focusing on framed views, each unit of the villa is made up of massive chamfered walls from which programmatic elements are carved.  Though each unit functions as a frame for the next, the chamfering of the walls renders the view beyond seemingly two-dimensional, challenging the significance of the successive view.
+          </p>
+      </section>
+
+      <section class="project">
+          <section class="project">
+          <div class="image-container-container">
+            <div class="image-container" id="kitofparts-width">
+              <img class="slideshow-first" src="images/kitofparts_1.jpg"> 
+              <img class="slideshow" src="images/kitofparts_2.jpg"> 
+              <img class="slideshow" src="images/kitofparts_plans.jpg"> 
+              <img class="slideshow" src="images/kitofparts_siteplan.jpg"> 
+              <img class="slideshow" src="images/kitofparts_sitesection.jpg"> 
+              <img class="slideshow" src="images/kitofparts_synthesisdrawing.jpg"> 
+            </div>
+         </div>
+
+         <p class="project-title">Kit of Parts</p>
+          <br><br><br>
+          <p class="project-description">
+            The villa Casa Malaparte (1937) is reinterpreted as a toy-like set of core principles -- a "kit of parts." The kit, when closed, operates as a prison-like cell, but opens to become an infinitely variable landscape into which stairs must lock to hold it in place. The villa’s monumental staircase thus becomes the essential tectonic element of the entire landscape.
+          </p>
+      </section>
+
+
+      <section class="project">
+          <section class="project">
+          <div class="image-container-container">
+            <div class="image-container" id="japan-width">
+              <img class="slideshow-first" src="images/japan_1.jpg">
+              <img class="slideshow" src="images/japan_2.jpg">
+              <img class="slideshow" src="images/japan_3.jpg">
+              <img class="slideshow" src="images/japan_4.jpg">
+              <img class="slideshow" src="images/japan_5.jpg">
+              <img class="slideshow" src="images/japan_6.jpg">
+              <img class="slideshow" src="images/japan_7.jpg">
+              <img class="slideshow" src="images/japan_8.jpg">
+              <img class="slideshow" src="images/japan_9.jpg">
+              <img class="slideshow" src="images/japan_10.jpg">
+              <img class="slideshow" src="images/japan_11.jpg">
+              <img class="slideshow" src="images/japan_12.jpg">
+            </div>
+         </div>
+
+         <p class="project-title">Japan, Robert C. Bates Fellowship and Summer Fellowship in Japan</p>
+          <br><br><br>
+          <p class="project-description">
+            This six-week independent summer research project focused on spatial concepts of Japanese carpentry, specifically wooden joinery, and its relation to aesthetic philosophy. The project served as a foundation for a senior project in the architecture major.
+          </p>
+      </section>
+
+      <section class="project">
+          <section class="project">
+          <div class="image-container-container">
+            <div class="image-container" id="arizona-width">
+              <img class="slideshow-first" src="images/arizona_1.jpg">
+              <img class="slideshow" src="images/arizona_2.jpg">
+              <img class="slideshow" src="images/arizona_3.jpg">
+              <img class="slideshow" src="images/arizona_4.jpg">
+              <img class="slideshow" src="images/arizona_5.jpg">
+              <img class="slideshow" src="images/antelope_1.jpg">
+              <img class="slideshow" src="images/antelope_2.jpg">
+              <img class="slideshow" src="images/antelope_3.jpg">
+              <img class="slideshow" src="images/antelope_4.jpg">
+            </div>
+         </div>
+
+         <p class="project-title">Arizona, Harvey Geiger Fellowship in Architecture</p>
+          <br><br><br>
+          <p class="project-description">
+            With the Harvey Geiger Fellowship, I pursued an independent research project into the American pilgrimage to the National Parks, visiting the Grand Canyon and the Antelope Canyon in Arizona. The project focused on the idea of an aesthetic pilgrimage and its relation to the vastness of these natural geologies.
+          </p>
+      </section>
+
+     <section class="project">
+          <section class="project">
+          <div class="image-container-container">
+            <div class="image-container" id="watercolors-width">
+              <img class="slideshow-first" src="images/kinkakuji.jpg">
+              <img class="slideshow" src="images/kamakura.jpg">
+              <img class="slideshow" src="images/shirakawago.jpg">
+              <img class="slideshow" src="images/new journal 1.jpg">
+              <img class="slideshow" src="images/malone.jpg">
+            </div>
+         </div>
+
+         <p class="project-title">Watercolors</p>
+          <br><br><br>
+          <p class="project-description">
+          </p>
+      </section>
+
+      <section class="project">
+          <section class="project">
+          <div class="image-container-container">
+            <div class="image-container" id="drawings-width">
+              <img class="slideshow-first" src="images/dwighthall_4.jpg">
+              <img class="slideshow" src="images/dwighthall_1.jpg">
+              <img class="slideshow" src="images/dwighthall_2.jpg">
+              <img class="slideshow" src="images/dwighthall_3.jpg">
+              <img class="slideshow" src="images/drawing_chair_sections.jpg">
+              <img class="slideshow" src="images/drawing_chair_detail.jpg">
+              <img class="slideshow" src="images/drawing_chair_contour.jpg">
+              <img class="slideshow" src="images/drawing_paperbag_1.jpg">
+              <img class="slideshow" src="images/drawing_paperbag_2.jpg">
+              <img class="slideshow" src="images/drawing_paperbag_3.jpg">
+            </div>
+         </div>
+
+         <p class="project-title">Drawings</p>
+          <br><br><br>
+          <p class="project-description">
+          </p>
+      </section>
+
+
+
+    </section>
+
+  </body>
+
+</html>
