@@ -1,5 +1,5 @@
 body{
-	font-family: 'Crimson Text', serif;
+	font-family: 'Gill Sans MT', sans-serif; 
 	background-image: url('../images/wires.jpg');
 	background-size: cover;
 	background-attachment: fixed;
@@ -32,12 +32,10 @@ a:hover{
 	margin-left: 50px;
 }
 #about{
-	/*font-family: 'Open Sans', sans-serif;*/
 	right: 250px;
 
 }
 #contact{
-	/*font-family: 'Open Sans', sans-serif;*/
 	right: 60px;
 }
 #project-container{
