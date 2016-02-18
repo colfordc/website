@@ -41,7 +41,7 @@
 }
 
 body{
-	font-family: 'Gill Sans MT', sans-serif; 
+	font-family: 'Crimson Text', sans-serif; 
 	background-image: url('../images/wires.jpg');
 	background-size: cover;
 	background-attachment: fixed;
@@ -140,8 +140,8 @@ a:hover{
 	width: 3000px;
 }
 
-#performance-width{
-	width: 4000px;
+#kentridge-width{
+	width: 6400px;
 }
 
 #analytic-width{
@@ -176,6 +176,15 @@ a:hover{
 }
 #gassho-width{
 	width: 9750px;
+}
+#falconworks-width{
+	width: 5000px;
+}
+#quarry-width{
+	width: 2200px;
+}
+#void-width{
+	width: 2600px;
 }
 .about-text{
 	width: 570px;
