@@ -41,7 +41,9 @@
 }
 
 body{
-	font-family: 'Crimson Text', sans-serif; 
+	font-family: 'Source Sans Pro', sans-serif;
+	font-weight: lighter;
+	font-size: 14px;
 	background-image: url('../images/wires.jpg');
 	background-size: cover;
 	background-attachment: fixed;
@@ -59,6 +61,8 @@ body{
 .info{
 	display: inline-block;
 	position: fixed;
+	font-size: 25px;
+	font-weight: lighter;
 }
 a{
 	text-decoration: none;
