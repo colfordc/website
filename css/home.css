@@ -1,3 +1,45 @@
+@media screen and (max-width:480px){
+	#project-container{
+		padding-left: 5%;
+	}
+	h1{
+		display: block!important;
+		position: relative!important;
+		font-size: 25px;
+		right: auto!important;
+		margin-left: 50px!important;
+	}
+	#project-container{
+		padding-top: 20px!important;
+	}
+	#about, #contact{
+		font-size: 18px;
+	}
+	.image-container{
+		width: 90%!important;
+		height: auto!important;
+		padding: 0;
+	}
+	.slideshow-first{
+		width: 100%!important;
+		height: auto!important;
+	}
+	.slideshow{
+		width: 100%!important;
+		margin-left: 0!important;
+		height: auto!important;
+	}
+	a{
+		margin : 0!important;
+	}
+	.project-title, .project-description{
+		width: 100%!important;
+	}
+	.project-title{
+		position: relative!important;
+	}
+}
+
 body{
 	font-family: 'Gill Sans MT', sans-serif; 
 	background-image: url('../images/wires.jpg');
@@ -55,7 +97,6 @@ a:hover{
 }
 .image-container{
 	height: 461px;
-	
 }
 .image-container-container{
 	overflow: hidden;
