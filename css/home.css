@@ -129,6 +129,15 @@ a:hover{
 .slideshow{
 	display: none;
 	margin-left: 50px;
+
+}
+#chair-width{
+	width: 4750px;
+
+}
+#motel-width{
+	width: 5000px;
+
 }
 #playbook-width{
 	width: 2650px;
