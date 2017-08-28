@@ -11,14 +11,46 @@
     <link href='https://fonts.googleapis.com/css?family=Crimson+Text:400|Open+Sans:400' rel='stylesheet' type='text/css'>
 
     <link href="../css/home.css"rel="stylesheet" media="screen">
+    <script>
 
-  </head>
+          $(document).ready(function(){
+              $('.slideshow-first').click(function(){
+                  $(this).parent().parent().siblings('.project-description').slideToggle(500);
+
+                 $(this).parent().children('.slideshow').toggle('slide', 500);
+
+                  if( $(this).parent().parent().css('overflow') == 'hidden'){
+                    $(this).parent().parent().css('overflow', 'scroll');
+                  }
+                  
+              })
+              $('.project-title').click(function(){
+                  $(this).siblings('.project-description').slideToggle(500);
+
+                  $(this).siblings('.image-container-container').children('.image-container').children('.slideshow').toggle('slide', 500);
+
+                  if( $(this).siblings('.image-container-container').css('overflow') == 'hidden'){
+                    $(this).siblings('.image-container-container').css('overflow', 'scroll');
+                  }
+              })
+
+              var offset = ($(window).width() - 600)/2
+              $('.image-container').css('padding-left', offset)
+          })
+          $(window).resize(function(){
+              var offset = ($(window).width() - 600)/2
+             $('.image-container').css('padding-left', offset)
+          })
+        </script>
+      </head>
 
   <body>
 
     <a href="../index.html"><h1 class="info" id="name">Katie Colford</h1></a>
     <a href="#"> <h1 class="info" id="about">About</h1> </a>
     <a href="contact.html"> <h1 class="info" id="contact">Contact</h1> </a>
+
+    <img src="images/desk.jpeg" alt="HTML5 Icon" style="width:128px;height:128px;">
 
     <p class="about-text"> I’m a recent graduate from Yale where I majored in architecture and designed and built a chair for my senior project. I spent last summer in Japan working at an architecture firm in Tokyo and researching traditional farmhouses. For the past few years, I worked at the Yale University Art Gallery as a guide and at the Yale Center for British Art in the conservation studio, which sparked a love of teaching and museums. l enjoy watercolor painting, biking, and collecting rocks. </p>
 
